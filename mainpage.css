@@ -1,0 +1,169 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(231, 221, 221);
+}
+
+/* Header Styling */
+header {
+    font-size: 30px;
+    background-color:  #0f2d85;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+   
+  
+}
+.feature{
+    font-size: 70px;
+    font-weight: bold;
+    text-shadow: 4px 2px 6px  #459fff;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+    
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Slider Styling */
+.slider {
+    position: relative;
+    width: 100vw; /* Full viewport width */
+    height: 540px; /* Fixed height for consistent sizing */
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100vw; /* Matches the slider's width */
+    height: 540px; /* Matches the slider's height */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    display: block;
+}
+
+
+/* Button Styling for the Slider */
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 15px 20px; /* Adjust size to make buttons larger */
+    font-size: 24px; /* Adjust size for visibility */
+    z-index: 10;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+/* Product Section Styling */
+#products {
+    padding: 50px;
+    text-align: center;
+}
+.product a {
+    color: whitesmoke; /* Sets the link color to white */
+    font-size: 48px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.product {
+    font-weight: bold;
+    font-size: 30px;
+    margin: 10px;
+    padding: 50px;
+    display: inline-block;
+    width: 30%;
+    color: white; /* Text color */
+    border: 2px solid black; /* Border styling */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Center the background image */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+    text-shadow: 4px 2px 6px rgba(85, 32, 95, 0.979); /* Text shadow: horizontal offset, vertical offset, blur radius, shadow color */
+    
+}
+
+.product:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    background-color: rgba(0, 0, 0, 0.5); /* Darken background on hover */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    
+   
+
+}
+
+.loading-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Adjust space between slider and lines */
+}
+
+.loading-line {
+    width: 30px; /* Adjust width as needed */
+    height: 5px; /* Adjust height as needed */
+    background-color: #ccc; /* Color of the loading lines */
+    margin: 0 5px; /* Space between lines */
+    cursor: pointer; /* Indicate that the lines are clickable */
+    transition: background-color 0.3s; /* Transition effect for hover */
+}
+
+.loading-line:hover {
+    background-color: #888; /* Change color on hover */
+}
+
+.loading-line.active {
+    background-color: #333; /* Color for active line */
+}
+
+.loading-line.loading {
+    animation: loadingAnimation 1s forwards; /* Apply loading animation */
+}
+
+@keyframes loadingAnimation {
+    0% {
+        background-color: #ccc; /* Start color */
+    }
+    100% {
+        background-color: #4caf50; /* End color (change to desired loading color) */
+    }
+}
+

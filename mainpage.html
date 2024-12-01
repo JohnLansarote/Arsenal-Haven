@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arsenal Haven</title>
+    <link rel="stylesheet" href="mainpage.css">
+</head>
+<body>
+    <header> 
+        <h1>Welcome to Arsenal Haven!</h1>
+        <nav>
+            <ul>
+                <li><a href="mainpage.html">Home</a></li>
+                <li><a href="index.html">Products</a></li>
+                
+                
+            </ul>
+        </nav>
+       
+    </header>
+    <div class="slider">
+            <div class="slides">
+                <div class="slide active">
+                    <img src="images/gunss.png" alt="Image 1">
+                </div>
+                <div class="slide">
+                    <img src="images/ssword.png" alt="Image 2">
+                </div>
+                <div class="slide">
+                    <img src="images/Equipment.png" alt="Image 3">
+                </div>
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+
+       <div class="loading-indicators">
+        <div class="loading-line" data-slide="0" onclick="goToSlide(0)"></div>
+        <div class="loading-line" data-slide="1" onclick="goToSlide(1)"></div>
+        <div class="loading-line" data-slide="2" onclick="goToSlide(2)"></div>
+    </div>
+
+
+    <section id="products">
+        <h2 class="feature">FEATURED PRODUCTS</h2>
+        <div class="product" id="shotguns" style="background-image: url('https://t4.ftcdn.net/jpg/03/01/81/21/360_F_301812107_ASLCt1tDcFhdsG8YnRHHYQiDmuHZkMok.jpg');">
+            <h3><a href="index.html?category=shotgun">Shotguns</a></h3>
+            <p>Compact and reliable, perfect for personal protection.</p>
+        </div>
+        <div class="product" id="rifle" data-category="Rifle" style="background-image: url('https://c4.wallpaperflare.com/wallpaper/596/172/955/military-assault-rifle-black-assault-rifle-wallpaper-preview.jpg');">
+            <h3><a href="index.html?category=rifle">Rifle</a></h3>
+            <p>Powerful and accurate, ideal for long-range protection.</p>
+        </div>
+        <div class="product" id="pistol" data-category="Pistol" style="background-image: url('https://images3.alphacoders.com/223/223397.jpg');">
+            <h3><a href="index.html?category=pistol">Pistol</a></h3>
+            <p>Durable and versatile, ideal for outdoor and self-defense use.</p>
+        </div>
+        <div class="product" id="sniper" style="background-image: url('https://images3.alphacoders.com/550/55099.jpg');">
+            <h3><a href="index.html?category=sniper">Sniper</a></h3>
+            <p>Engineered for precision, ideal for tactical scenarios.</p>
+        </div>
+
+        <div class="product" id="knives" style="background-image: url('https://st4.depositphotos.com/17110272/28032/i/450/depositphotos_280326094-stock-photo-penknife-on-a-black-gradient.jpg');">
+            <h3><a href="index.html?category=knife">Knives</a></h3>
+            <p>Versatile tools for both utility and self-defense.</p>
+        </div>
+
+        <div class="product" id="Protective-Equipment" style="background-image: url('https://blackcobrallc.com/wp-content/uploads/2023/07/10-3-500x500.png');">
+            <h3><a href="index.html?category=equipment">Tactical Equipment</a></h3>
+            <p>Versatile tools for both utility and self-defense.</p>
+        </div>
+    </section>
+    
+    
+    
+    
+        <footer>
+            <p>&copy; 2024 Arsenal Haven. All rights reserved.</p>
+         
+        </footer>
+        <script src="mainpage.js"></script>
+</body>
+</html>

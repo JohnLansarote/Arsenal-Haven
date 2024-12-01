@@ -1,0 +1,305 @@
+/* Center the main content and make it one item per row */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-grow: 1; /* Allow the main content to take up available space */
+
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Ensure the body covers the entire viewport height */
+}
+header {
+    font-size: 30px;
+    background-color: #0f2d85;
+    color: white;
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+/* Container box for product list */
+.product-list {
+    width: 100%;
+    max-width: 900px; /* Increase the max-width for a wider container */
+    min-height: 300px; /* Minimum height to ensure the box expands even if empty */
+    padding: 20px;
+   
+    border-radius: 8px;
+    background-color: #ffffff;
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden; /* Prevent content from overflowing */
+}
+
+/* Product item inside the list */
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    width: 100%;
+    box-sizing: border-box; /* Prevents padding from causing overflow */
+    max-width: 100%; /* Ensures the product fits within the container */
+}
+
+/* Images inside the cart-item */
+.cart-item img {
+    width: 80px;  /* Adjust the width as per your design */
+    height: auto;
+    margin-right: 15px;
+    object-fit: contain; /* Ensures the image maintains its aspect ratio */
+}
+
+/* Product title and description */
+.cart-item h3 {
+    flex-grow: 1;
+    font-size: 18px;
+    margin: 0;
+    overflow: hidden; /* Prevent overflow of text */
+    text-overflow: ellipsis; /* Adds ellipsis if text overflows */
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.cart-item p {
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+/* Optional: Add a scrollable area for overflow content */
+.cart-item .quantity-control {
+    display: flex;
+    align-items: center;
+}
+
+.cart-item .quantity-control button {
+    font-size: 18px;
+    padding: 0 8px;
+    margin: 0 5px;
+}
+
+
+
+.cart-checkbox {
+    margin-right: 15px;
+}
+
+/* Center the checkout and back buttons */
+#checkout-button, #back-button {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#back-button {
+    background-color: #999;
+}
+/* Style for cancel button */
+.cancel-button {
+    background-color: #ffcc00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.cancel-button:hover {
+    background-color: #ff9900;
+}
+
+.remove-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    
+}
+
+.remove-button:hover {
+    background-color: #ff1a1a;
+}
+
+
+
+/* Notification styles */
+.notification {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: none; /* Hidden by default */
+    z-index: 1000;
+    font-size: 16px;
+    text-align: center;
+}
+
+.notification.show {
+    display: block; /* Show the notification */
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    
+   
+
+}
+.empty-cart-message {
+    text-align: center;          
+    font-size: 2rem;             
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;           
+    margin-top: 50px;            
+}
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal.show {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(20px);
+    transition: transform 0.3s ease-out;
+}
+
+.modal.show .modal-content {
+    transform: translateY(0);
+}
+
+/* Input and select styles inside the modal */
+.modal input, .modal select {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+.modal input:focus, .modal select:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.modal button {
+    padding: 12px 24px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    margin: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.modal button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+.modal button#close-modal {
+    background-color: #999;
+}
+
+.modal button#close-modal:hover {
+    background-color: #7a7a7a;
+}
+
+/* Smooth transition for modal background */
+.modal .modal-content {
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

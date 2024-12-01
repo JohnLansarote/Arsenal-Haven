@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arsenal Haven</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> 
+        
+        <nav>
+            <ul>
+                <a href="mainpage.html">
+                    <label>Arsenal Haven</label>
+                </a>
+                <input type="image" src="images/cart-removebg-preview.png" alt="Button Image" onclick="viewCart()" style="width: 50px; height: auto; margin-left: 1400px;">
+                <input type="image" src= "images/admin.png" alt="Login Button" onclick="showLoginBox()" style="width: 40px; height: auto; padding-left: 10px ">
+            </ul>
+        </nav>
+
+       
+    </header>
+    
+    
+    <div class="flash-sale">
+        <h2>Flash Sale: <span id="timer"></span></h2>
+    </div>
+    
+    <div class="slider">
+        <div class="slides">
+            <div class="slide active">
+                <img src="images/2.png" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="images/5.png" alt="Image 2">
+            </div>
+            <div class="slide">
+                <img src="images/coming.png" alt="Image 3">
+            </div>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+   <div class="loading-indicators">
+    <div class="loading-line" data-slide="0" onclick="goToSlide(0)"></div>
+    <div class="loading-line" data-slide="1" onclick="goToSlide(1)"></div>
+    <div class="loading-line" data-slide="2" onclick="goToSlide(2)"></div>
+</div>
+
+<div class="controls">
+    <h1> Search Products</h1>
+    <input type="text" id="search-input" placeholder="Search by name..." 
+   oninput="filterAndSortProducts()" 
+   style="border: 1px solid #000; border-radius: 5px; padding: 5px;">
+
+<select id="filter-select" onchange="filterAndSortProducts()" 
+    style="border: 1px solid #000; border-radius: 5px; padding: 5px;">
+        <option value="all">All Types</option>
+        <option value="pistol">Pistol</option>
+        <option value="rifle">Rifle</option>
+        <option value="carbine">Carbine</option>
+        <option value="shotgun">Shotgun</option>    
+        <option value="sniper">Sniper</option>
+        <option value="smg">SMG</option>
+        <option value="mg">MG</option>
+        <option value="knife">Knife/Sword</option>
+        <option value="equipment">Equipment</option>
+    </select>
+    <select id="sort-select" onchange="filterAndSortProducts()"
+    style="border: 1px solid #000; border-radius: 5px; padding: 5px;">
+    <option value="highToLow">High to Low</option>
+        <option value="lowToHigh">Low to High</option>
+        
+    </select>
+   
+   
+
+</div>
+
+    
+    <main>
+        <div id="product-list" class="product-list" ></div>
+        
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Arsenal Haven</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="mainpage.js"></script>
+</body>
+</html>
+

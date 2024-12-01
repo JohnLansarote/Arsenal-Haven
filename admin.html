@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Arsenal Haven</title>
+    <link rel="stylesheet" href="admin.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+
+    <header>
+        <h1>Admin Panel</h1>
+        <nav>
+            <ul>
+                <li><a href="mainpage.html">Home</a></li>
+                <li><a href="index.html">Products</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <!-- Add New Product Form -->
+            <div>
+                <h2>Add New Product</h2>
+                <form id="add-product-form" onsubmit="addProduct(); return false;">
+                    <label for="product-name">Product Name:</label>
+                    <input type="text" id="product-name" required>
+    
+                    <label for="product-type">Product Type:</label>
+                    <select id="product-type" onchange="updateStatsFields();" required>
+                        <option value="pistol">Pistol</option>
+                        <option value="rifle">Rifle</option>
+                        <option value="shotgun">Shotgun</option>
+                        <option value="sniper">Sniper</option>
+                        <option value="smg">SMG</option>
+                        <option value="mg">MG</option>
+                        <option value="knife">Knife/Sword</option>
+                        <option value="equipment">Equipment</option>
+                    </select>
+    
+                    <label for="product-price">Price and Quantity:</label>
+                    <div class="price-quantity-row">
+                        <input type="number" id="product-price" placeholder="Price" required>
+                        <input type="number" id="product-quantity" placeholder="Quantity" required>
+                    </div>
+    
+                    <label for="product-image">Product Image:</label>
+                    <input type="file" id="product-image" accept="image/*" required>
+    
+                    <button type="submit">Add Product</button>
+                </form>
+            </div>
+    
+            <!-- Stats Box -->
+            <div class="stats-container">
+                <h2>Stats</h2>
+                <form id="stats-form">
+                    <label for="attack">Attack:</label>
+                    <input type="number" id="attack" placeholder="Attack" max="100" required>
+                
+                    <label for="range">Range:</label>
+                    <input type="number" id="range" placeholder="Range" max="100" required>
+                
+                    <label for="stat3" id="stat3-label">Recoil:</label>
+                    <input type="number" id="stat3" placeholder="Recoil" max="100" required>
+                
+                    <label for="automatic">Automatic:</label>
+                    <input type="number" id="automatic" placeholder="Automatic" max="100" required>
+                </form>
+                
+            </div>
+        </div>
+    
+        <p id="success-message" style="display: none;">Product successfully added!</p>
+    </main>
+    
+
+    <footer>
+        <p>&copy; 2024 Arsenal Haven</p>
+    </footer>
+
+    <script src="admin.js"></script>
+    <script src="script.js"></script>
+    <script src="details.js"></script>
+</body>
+</html>

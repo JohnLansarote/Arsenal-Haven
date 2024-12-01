@@ -1,0 +1,376 @@
+[
+    {
+        "name": "AK47",
+        "price": 150000,
+        "image": "https://i.pinimg.com/474x/b1/ad/cf/b1adcfb90100a634adf250889965f06f.jpg",
+        "type": "rifle",
+        "description": "Famous assault rifle known for its reliability.",
+        "caliber": "7.62×39mm",
+        "weight": "3.47kg",
+        "stock": 14,
+        "stats": {
+            "attack": 85,
+            "range": 70,
+            "accuracy": 65,
+            "recoil": 50,
+            "automatic": 80
+        }
+    },
+    {
+        "name": "AW50 Sniper Rifle",
+        "price": 450000,
+        "image": "https://i.pinimg.com/736x/2d/8b/4e/2d8b4ecea67c790f54d922d74ef15d4f.jpg",
+        "type": "sniper",
+        "description": "High-caliber sniper rifle designed for long-range shooting.",
+        "caliber": ".50 BMG",
+        "weight": "6.5kg",
+        "stock": 3,
+        "stats": {
+            "attack": 95,
+            "range": 100,
+            "accuracy": 90,
+            "recoil": 70,
+            "automatic": 10
+        }
+    },
+    {
+        "name": "Beretta M9",
+        "price": 30000,
+        "image": "https://i.pinimg.com/736x/82/6f/b1/826fb12254eb800b86ffb116ec859436.jpg",
+        "type": "pistol",
+        "description": "A semi-automatic pistol used by the U.S. Armed Forces.",
+        "caliber": "9mm",
+        "weight": "960g",
+        "stock": 12,
+        "stats": {
+            "attack": 60,
+            "range": 30,
+            "accuracy": 70,
+            "recoil": 40,
+            "automatic": 30
+        }
+    },
+    {
+        "name": "Benelli M4",
+        "price": 80000,
+        "image": "https://assets.cabelas.ca/image/upload/q_auto:eco,f_auto/c_scale,w_auto/dpr_auto/ProductImages//44057-276179",
+        "type": "shotgun",
+        "description": "Semi-automatic shotgun used by the U.S. Marine Corps.",
+        "caliber": "12 Gauge",
+        "weight": "3.8kg",
+        "stock": 10,
+        "stats": {
+            "attack": 75,
+            "range": 50,
+            "accuracy": 55,
+            "recoil": 60,
+            "automatic": 20
+        }
+    },
+    {
+        "name": "FN F2000",
+        "price": 170000,
+        "image": "https://i.pinimg.com/736x/cd/d0/43/cdd043f58cd390edba11d4047b8190c4.jpg",
+        "type": "rifle",
+        "description": "Bullpup assault rifle with a unique design.",
+        "caliber": "5.56×45mm NATO",
+        "weight": "3.6kg",
+        "stock": 9,
+        "stats": {
+            "attack": 80,
+            "range": 75,
+            "accuracy": 80,
+            "recoil": 45,
+            "automatic": 85
+        }
+    },
+    {
+        "name": "FN SCAR",
+        "price": 250000,
+        "image": "https://i.pinimg.com/736x/5a/e4/16/5ae41694099a33cdc4125e46374261ac.jpg",
+        "type": "rifle",
+        "description": "Modular rifle platform used by special forces.",
+        "caliber": "5.56×45mm NATO / 7.62×51mm NATO",
+        "weight": "3.6kg",
+        "stock": 6,
+        "stats": {
+            "attack": 85,
+            "range": 80,
+            "accuracy": 85,
+            "recoil": 50,
+            "automatic": 70
+        }
+    },
+    {
+        "name": "Glock 17",
+        "price": 35000,
+        "image": "https://i.pinimg.com/736x/d1/2d/c2/d12dc28cfaf5f2f6a4cba8087225017c.jpg",
+        "type": "pistol",
+        "description": "Popular handgun with a polymer frame and short recoil.",
+        "caliber": "9mm",
+        "weight": "625g",
+        "stock": 25,
+        "stats": {
+            "attack": 60,
+            "range": 30,
+            "accuracy": 80,
+            "recoil": 40,
+            "automatic": 0
+        }
+    },
+    {
+        "name": "HK MP5",
+        "price": 180000,
+        "image": "https://i.pinimg.com/736x/c3/96/56/c396560bd512092cffb3f3f2e5bd581d.jpg",
+        "type": "smg",
+        "description": "Widely used submachine gun by law enforcement and special forces.",
+        "caliber": "9mm",
+        "weight": "2.5kg",
+        "stock": 10,
+        "stats": {
+            "attack": 75,
+            "range": 50,
+            "accuracy": 70,
+            "recoil": 40,
+            "automatic": 90
+        }
+    },
+    {
+        "name": "M16A4",
+        "price": 120000,
+        "image": "https://i.pinimg.com/736x/52/c7/4c/52c74c0cce09e6a76746462cfd6b1549.jpg",
+        "type": "rifle",
+        "description": "Standard-issue assault rifle of the U.S. military.",
+        "caliber": "5.56×45mm NATO",
+        "weight": "3.26kg",
+        "stock": 7,
+        "stats": {
+            "attack": 80,
+            "range": 70,
+            "accuracy": 75,
+            "recoil": 45,
+            "automatic": 75
+        }
+    },
+    {
+        "name": "M249 SAW",
+        "price": 300000,
+        "image": "https://i.pinimg.com/736x/ad/cc/c6/adccc6b3295e3921791c025ff93b42d7.jpg",
+        "type": "mg",
+        "description": "Light machine gun used by the U.S. military for squad support.",
+        "caliber": "5.56×45mm NATO",
+        "weight": "7.5kg",
+        "stock": 5,
+        "stats": {
+            "attack": 95,
+            "range": 70,
+            "accuracy": 60,
+            "recoil": 85,
+            "automatic": 90
+        }
+    },
+    {
+        "name": "Remington 870",
+        "price": 45000,
+        "image": "https://i.pinimg.com/736x/18/05/27/18052732a03d71d743379212c1393488.jpg",
+        "type": "shotgun",
+        "description": "A popular pump-action shotgun widely used in hunting and home defense.",
+        "caliber": "12 Gauge",
+        "weight": "3.2kg",
+        "stock": 15,
+        "stats": {
+            "attack": 85,
+            "range": 30,
+            "accuracy": 65,
+            "recoil": 50,
+            "automatic": 0
+        }
+    },
+    {
+        "name": "RPK",
+        "price": 270000,
+        "image": "https://i.pinimg.com/736x/21/f8/0a/21f80ae0abb60b0280c4d7db2104068e.jpg",
+        "type": "mg",
+        "description": "Russian light machine gun based on the AK-47 design.",
+        "caliber": "7.62×39mm",
+        "weight": "4.8kg",
+        "stock": 6,
+        "stats": {
+            "attack": 90,
+            "range": 65,
+            "accuracy": 60,
+            "recoil": 75,
+            "automatic": 80
+        }
+    },
+    {
+        "name": "SVD Dragunov",
+        "price": 200000,
+        "image": "https://i.pinimg.com/736x/28/17/5f/28175f42849d52d7c7c26018bb36b946.jpg",
+        "type": "sniper",
+        "description": "Designated marksman rifle used by the Russian military.",
+        "caliber": "7.62×54mmR",
+        "weight": "4.3kg",
+        "stock": 5,
+        "stats": {
+            "attack": 95,
+            "range": 100,
+            "accuracy": 90,
+            "recoil": 60,
+            "automatic": 0
+        }
+    },
+    {
+        "name": "Uzi",
+        "price": 150000,
+        "image": "https://i.pinimg.com/736x/6d/98/76/6d9876d6ab1472a4519eb570a4afb8c4.jpg",
+        "type": "smg",
+        "description": "Compact Israeli-designed submachine gun used worldwide.",
+        "caliber": "9mm",
+        "weight": "3.5kg",
+        "stock": 20,
+        "stats": {
+            "attack": 70,
+            "range": 40,
+            "accuracy": 60,
+            "recoil": 45,
+            "automatic": 85
+        }
+    },
+    {
+        "name": "Karambit",
+        "price": 5000,
+        "image": "https://i.pinimg.com/736x/97/09/e4/9709e48a8651d6a6dae5928c79b7beb2.jpg",
+        "type": "knife",
+        "description": "A curved knife designed for tactical use and self-defense.",
+        "material": "Stainless Steel",
+        "weight": "200g",
+        "stock": 50,
+        "stats": {
+            "attack": 20,
+            "range": 10,
+            "durability": 70,
+            "weight": 10,
+            "automatic": 0
+        }
+    },
+    {
+        "name": "Tactical Knife",
+        "price": 4500,
+        "image": "https://i.pinimg.com/736x/a0/6b/ef/a06befe0d5bf53208e1ab484550f78be.jpg",
+        "type": "knife",
+        "description": "A versatile knife designed for combat and survival situations.",
+        "material": "High Carbon Steel",
+        "weight": "250g",
+        "stock": 30,
+        "stats": {
+            "attack": 20,
+            "range": 10,
+            "durability": 70,
+            "weight": 10,
+            "automatic": 0
+        }
+    },
+    {
+        "name": "Katana",
+        "price": 25000,
+        "image": "https://i.pinimg.com/736x/b7/57/33/b75733b2c48edee897438169a3e34e26.jpg",
+        "type": "knife",
+        "description": "A traditional Japanese sword known for its sharpness and precision.",
+        "material": "Folded Steel",
+        "weight": "1.2kg",
+        "stock": 10,
+        "stats": {
+            "attack": 20,
+            "range": 30,
+            "durability": 80,
+            "weight": 20,
+            "automatic": 0
+        }
+    },
+    {
+        "name": "Butterfly Knife",
+        "price": 3000,
+        "image": "https://i.pinimg.com/736x/49/28/4b/49284be637f3eee482224a5fa3be3246.jpg",
+        "type": "knife",
+        "description": "A folding pocket knife with a unique design for rapid deployment.",
+        "material": "Stainless Steel",
+        "weight": "150g",
+        "stock": 40,
+        "stats": {
+            "attack": 20,
+            "range": 10,
+            "durability": 60,
+            "weight": 10,
+            "automatic": 0
+        }
+    },
+    {
+        "name": "Helmet",
+        "price": 8000,
+        "image": "https://i.pinimg.com/736x/4b/ac/4b/4bac4b7b06caeb57a5e065ad5b5bbbc5.jpg",
+        "type": "equipment",
+        "description": "A durable helmet designed to provide head protection in combat.",
+        "material": "Kevlar",
+        "weight": "1.5kg",
+        "stock": 25,
+        "stats": {
+            "attack": 0,
+            "range": 0,
+            "durability": 100,
+            "weight": 40,
+            "automatic": 0
+        }
+    },
+    {
+        "name": "Bulletproof Vest",
+        "price": 50000,
+        "image": "https://i.pinimg.com/736x/d2/b1/45/d2b145497d0358e0111b76a55d587782.jpg",
+        "type": "equipment",
+        "description": "A vest designed to protect the torso against ballistic threats.",
+        "material": "Kevlar",
+        "weight": "3kg",
+        "stock": 15,
+        "stats": {
+            "attack": 0,
+            "range": 0,
+            "durability": 100,
+            "weight": 50,
+            "automatic": 0
+        }
+    },
+    {
+        "name": "Boots",
+        "price": 12000,
+        "image": "https://i.pinimg.com/736x/e0/f0/e2/e0f0e2232e863add257ff689ed7485a3.jpg",
+        "type": "equipment",
+        "description": "Tactical boots designed for durability and comfort in rough terrains.",
+        "material": "Leather",
+        "weight": "2kg",
+        "stock": 35,
+        "stats": {
+            "attack": 0,
+            "range": 0,
+            "durability": 80,
+            "weight": 40,
+            "automatic": 0
+        }
+    },
+    {
+        "name": "Gloves",
+        "price": 2500,
+        "image": "https://i.pinimg.com/736x/cd/b5/f4/cdb5f4df793da3b1d472d3b20aa8e66d.jpg",
+        "type": "equipment",
+        "description": "Protective gloves designed for enhanced grip and safety.",
+        "material": "Synthetic Leather",
+        "weight": "300g",
+        "stock": 60,
+        "stats": {
+            "attack": 0,
+            "range": 0,
+            "durability": 80,
+            "weight": 10,
+            "automatic": 0
+        }
+    }
+]
